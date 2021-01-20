@@ -1,6 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
+
+  Firestore.instance.collection("col").document("doc").setData({"texto": "Emerson"});
+
   runApp(MyApp());
 }
 
