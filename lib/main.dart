@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import 'chat_screen.dart';
+
 void main() async {
-
-  Firestore.instance.collection("col").document("doc").setData({"texto": "Emerson"});
-
   runApp(MyApp());
 }
 
@@ -16,8 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: IconThemeData(
+          color: Colors.blue
+        )
       ),
-      home: Container(),
+      home: ChatScreen(),
     );
   }
 }
