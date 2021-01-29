@@ -1,4 +1,4 @@
-package com.emersonjahn.chat
+package com.emersonjahn
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

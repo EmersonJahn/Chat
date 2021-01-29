@@ -31,7 +31,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<FirebaseUser> _getUser() async {
 
-    if (_currentUser != null) return await _getUser();
+    if (_currentUser != null) return _currentUser;
 
     try {
 
@@ -50,6 +50,9 @@ class _ChatScreenState extends State<ChatScreen> {
       return user;
 
     } catch (e) {
+      print("aqui");
+      print(e);
+      print("aqui 2");
       return null;
 
     }
